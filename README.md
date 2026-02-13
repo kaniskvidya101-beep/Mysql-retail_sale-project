@@ -101,9 +101,11 @@ WHERE
     Filters only large quantity purchases.
     Combines multiple conditions using AND.
 
+
 3. **Write a SQL query to calculate the total sales (total_sale) for each category.**
     **Business Question**
      **Which product category drives revenue?**
+     
 ```sql
 SELECT 
     category,
@@ -284,6 +286,8 @@ HAVING AVG(total_sale) > (
    Computes company-wide average using a subquery.
    Uses HAVING to compare grouped averages with overall average.
    Demonstrates understanding of aggregate filtering and subqueries.
+
+   
 13. Write a query to find the number of repeat customers (customers who made more than 1 purchase).
   **Business Question**
    **How many customers made more than one purchase?**
@@ -301,6 +305,7 @@ FROM (
     Uses HAVING COUNT(transactions_id) > 1 to identify repeat buyers.
     Wraps result in outer query to count total repeat customers.
     Demonstrates customer retention analysis using aggregation logic.
+    
 
 14 Find the most popular product category for each gender based on number of transactions.
     **Business Question**
